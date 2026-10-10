@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="google-site-verification" content="t_kvqZU3zRuFDx9gnPlnPLJP1k6Xst8nDpwrUtNk4rw" />
+<title>Nepal Authorized Service Center | Appliance Repair</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: Arial, sans-serif;
+    color: #10284b;
+    background: #fff;
+    line-height: 1.6;
+}
+
+.topbar {
+    background: #0865e8;
+    color: white;
+    padding: 9px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.topbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar {
+    background: #08264d;
+    color: white;
+    padding: 12px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand img {
+    width: 78px;
+    height: 78px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+}
+
+.brand h2 {
+    font-size: 21px;
+    line-height: 1.25;
+}
+
+.brand h2 span { color: #35baff; }
+
+.brand p {
+    font-size: 12px;
+    color: #dbeafe;
+}
+
+nav {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+nav a:hover { color: #42c4ff; }
+
+.hero {
+    min-height: 350px;
+    padding: 55px 6%;
+    display: flex;
+    align-items: center;
+    background:
+      linear-gradient(90deg, #f0f8ff 0%, #f0f8ffed 45%, #ffffff55 100%),
+      url("https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1600&q=85")
+      center/cover;
+}
+
+.hero-content {
+    max-width: 590px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 4vw, 48px);
+    line-height: 1.15;
+    margin-bottom: 15px;
+    color: #10284b;
+}
+
+.hero h1 span { color: #0865e8; }
+
+.hero p {
+    font-size: 17px;
+    margin-bottom: 22px;
+}
+
+.button {
+    display: inline-block;
+    background: #0865e8;
+    color: white;
+    padding: 12px 23px;
+    border-radius: 28px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 4px 5px 4px 0;
+}
+
+.button:hover { background: #064bad; }
+
+.whatsapp { background: #0da85b; }
+.whatsapp:hover { background: #078344; }
+
+.trust {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-top: 22px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.trust span { padding-right: 12px; }
+
+section { padding: 42px 5%; }
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    color: #10284b;
+}
+
+.section-heading h2 span { color: #0865e8; }
+
+.section-heading p {
+    color: #64748b;
+    margin-top: 5px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 1250px;
+    margin: auto;
+}
+
+.service-card {
+    border: 1px solid #dbe7f5;
+    border-radius: 9px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: white;
+    box-shadow: 0 3px 12px #0b254508;
+}
+
+.service-icon {
+    font-size: 44px;
+    min-width: 55px;
+    text-align: center;
+}
+
+.service-card h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.service-card p {
+    font-size: 13px;
+    color: #52647c;
+    margin-bottom: 10px;
+}
+
+.small-button {
+    display: inline-block;
+    background: #0865e8;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.why {
+    background: #eff7ff;
+}
+
+.why-content {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.2fr 2fr;
+    align-items: center;
+    gap: 30px;
+}
+
+.why h2 {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.why h2 span { color: #0865e8; }
+
+.why p {
+    margin-top: 10px;
+    color: #52647c;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.benefit {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.benefit-icon {
+    width: 44px;
+    height: 44px;
+    background: #0865e8;
+    color: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-size: 20px;
+    flex-shrink: 0;
+}
+
+.brands { text-align: center; }
+
+.brands h3 {
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+.brand-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    font-weight: bold;
+    color: #254a7b;
+}
+
+.contact {
+    background: #eff7ff;
+}
+
+.contact-grid {
+    max-width: 1150px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.contact-box {
+    background: white;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 3px 12px #0b254508;
+}
+
+.contact-box h3 { margin-bottom: 12px; }
+
+.contact-box p {
+    margin: 8px 0;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    background: #08264d;
+    color: white;
+    text-align: center;
+    padding: 22px 15px;
+    font-size: 13px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+@media (max-width: 850px) {
+    .navbar { justify-content: center; }
+    nav { justify-content: center; gap: 15px; }
+    .services { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .why-content { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 550px) {
+    .topbar { justify-content: center; text-align: center; }
+    .brand h2 { font-size: 17px; }
+    .brand img { width: 60px; height: 60px; }
+    .hero { padding: 45px 6%; }
+    .services, .contact-grid { grid-template-columns: 1fr; }
+    .service-card { padding: 16px; }
+    .benefits { grid-template-columns: 1fr; }
+    section { padding: 32px 5%; }
+    .section-heading h2, .why h2 { font-size: 27px; }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <span>📅 Book Now — Appliance Repair Service</span>
+    <span>🕒 Service Hours: 7 AM – 9 PM</span>
+    <a href="tel:9740288957">☎ 9740288957</a>
+</div>
+
+<header class="navbar">
+    <div class="brand">
+        <img src="logo.jpg" alt="Nepal Authorized Service Center Logo">
+        <div>
+            <h2>Nepal Authorized<br>
+            <span>Service Center</span></h2>
+            <p>Washing Machine & Freezer Repair</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Our Services</a>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Authorized Home Appliance<br>
+        <span>Service in Nepal</span></h1>
+
+        <p>
+            Professional washing machine and freezer repair.
+            Reliable appliance maintenance and friendly
+            customer support at your service.
+        </p>
+
+        <a class="button" href="tel:9740288957">
+            ☎ 9740288957
+        </a>
+
+        <a class="button whatsapp"
+           href="https://wa.me/9779740288957"
+           target="_blank" rel="noopener">
+            WhatsApp Us
+        </a>
+
+        <div class="trust">
+            <span>✓ Reliable Service</span>
+            <span>⚙ Skilled Technicians</span>
+            <span>◷ Quick Response</span>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="section-heading">
+        <h2>Our <span>Services</span></h2>
+        <p>Repair and maintenance for your home appliances.</p>
+    </div>
+
+    <div class="services">
+        <article class="service-card">
+            <div class="service-icon">🧺</div>
+            <div>
+                <h3>Washing Machine Repair</h3>
+                <p>Front-load and top-load machine repair and maintenance.</p>
+                <a class="small-button" href="#contact">Book Service →</a>
+            </div>
+        </article>
+
+        <article class="service-card">
+            <div class="service-icon">❄️</div>
+            <div>
+                <h3>Freezer & Refrigerator</h3>
+                <p>Cooling issues, inspection and refrigerator repairs.</p>
+                <a class="small-button" href="#contact">Book Service →</a>
+            </div>
+        </article>
+
+        <article class="service-card">
+            <div class="service-icon">🌬️</div>
+            <div>
+                <h3>AC Repair & Service</h3>
+                <p>Air conditioner inspection, cleaning and maintenance.</p>
+                <a class="small-button" href="#contact">Book Service →</a>
+            </div>
+        </article>
+
+        <article class="service-card">
+            <div class="service-icon">📺</div>
+            <div>
+                <h3>TV Repair</h3>
+                <p>TV troubleshooting and repair enquiries.</p>
+                <a class="small-button" href="#contact">Book Service →</a>
+            </div>
+        </article>
+
+        <article class="service-card">
+            <div class="service-icon">🍲</div>
+            <div>
+                <h3>Microwave Oven Repair</h3>
+                <p>Microwave inspection and maintenance enquiries.</p>
+                <a class="small-button" href="#contact">Book Service →</a>
+            </div>
+        </article>
+
+        <article class="service-card">
+            <div class="service-icon">🔌</div>
+            <div>
+                <h3>Other Home Appliances</h3>
+                <p>Ask us about repair services for other appliances.</p>
+                <a class="small-button" href="#contact">Book Service →</a>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section class="why" id="about">
+    <div class="why-content">
+        <div>
+            <h2>Why <span>Choose Us?</span></h2>
+            <p>Your trusted home appliance service partner in Nepal.</p>
+            <a class="button" href="#contact">Contact Us →</a>
+        </div>
+
+        <div class="benefits">
+            <div class="benefit">
+                <span class="benefit-icon">✓</span>
+                <span>Reliable Service</span>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon">⚙</span>
+                <span>Skilled Technicians</span>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon">⌂</span>
+                <span>Home Service Enquiries</span>
+            </div>
+            <div class="benefit">
+                <span class="benefit-icon">★</span>
+                <span>Customer Satisfaction</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="brands" id="gallery">
+    <h3>Appliance Brands We Can Help With</h3>
+    <div class="brand-list">
+        <span>Samsung</span>
+        <span>LG</span>
+        <span>Whirlpool</span>
+        <span>Haier</span>
+        <span>Hitachi</span>
+        <span>Panasonic</span>
+        <span>Godrej</span>
+    </div>
+    <p style="margin-top:12px;color:#64748b;font-size:13px">
+        Please contact us to confirm service availability for your brand.
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <div class="section-heading">
+        <h2>Contact <span>Us</span></h2>
+        <p>Contact us to enquire about a repair or arrange a service.</p>
+    </div>
+
+    <div class="contact-grid">
+        <div class="contact-box">
+            <h3>📍 Our Location</h3>
+            <p>Kritipur, Nepal</p>
+        </div>
+
+        <div class="contact-box">
+            <h3>☎ Call Us</h3>
+            <p>9740288957</p>
+            <a class="button" href="tel:9740288957">Call Now</a>
+        </div>
+
+        <div class="contact-box">
+            <h3>💬 WhatsApp</h3>
+            <p>Message us about your appliance.</p>
+            <a class="button whatsapp"
+               href="https://wa.me/9779740288957"
+               target="_blank" rel="noopener">
+               WhatsApp Us
+            </a>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer>
+    <p>© 2026 Nepal Authorized Service Center</p>
+    <p>Washing Machine & Freezer Repair Center</p>
+    <p style="margin-top:10px">
+        <a href="#home">Home</a> |
+        <a href="#services">Services</a> |
+        <a href="#about">About Us</a> |
+        <a href="#contact">Contact</a>
+    </p>
+</footer>
+
+</body>
+</html>
