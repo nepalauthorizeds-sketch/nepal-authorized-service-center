@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="google-site-verification" content="t_kvqZU3zRuFDx9gnPlnPLJP1k6Xst8nDpwrUtNk4rw" />
 <title>Nepal Authorized Service Center | Appliance Repair</title>
 
 <style>
